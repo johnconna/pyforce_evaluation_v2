@@ -11,3 +11,14 @@ We found that the suffix of the file isn't 100% match with the real file,
 So we statistic all the package MAGIC,and provide a rename script according to MAGIC
 Also for Bandit4mal, It needs decompressed packages.
 Thus we provide the script.
+### 3.Bandit4mal
+Bandit4mal is OK,but in our practice.
+It best to using pip installed bandit4mal rather than project from github.
+The json output results is hard to process.
+Also we provide process scripts to extract the core infos
+### 4.OSSF-Packages
+OSSF is ez to deploy, but u may need proxy to have better network(Ignore if you don't need proxy:)
+But the analysis container seems have some problem, so it's difficult to paraelle, thus we provide a serial_batch script
+Also OSSF only provide malious metrics, so our idea is give prompt & OSSF_analysis_results.json to LLM
+We also provide this script.
+### 5.EA4MP
