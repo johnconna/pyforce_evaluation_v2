@@ -22,3 +22,11 @@ But the analysis container seems have some problem, so it's difficult to paraell
 Also OSSF only provide malious metrics, so our idea is give prompt & OSSF_analysis_results.json to LLM
 We also provide this script.
 ### 5.EA4MP
+EA4MP is hard to reproduce by origional scripts, Eg:
+Lack of initial env;
+import use the absolute path,so there are conutless import errors;
+Metadata may not fetch from remote.
+So we rebuild the project follow it's idea:
+Using ML-models to judge metadata;
+Using fine-tuned BERT to judge sequence;
+And finally using Adaboost or share-same-weight to judge
